@@ -18,4 +18,5 @@ script
 * package.json - add packages you need
 * Gruntfile.js - adapt as needed
 * react_components - the actual code lives here, one jsx file per component.
+* .git/config - change the origin as needed
 The entry file is app.jsx
