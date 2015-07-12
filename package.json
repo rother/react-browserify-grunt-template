@@ -1,6 +1,6 @@
 {
   "name": "react-browserify-grunt-template",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A template to start new React projects",
   "author": "Kristian Rother",
   "license": "BSD-2-Clause",

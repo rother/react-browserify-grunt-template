@@ -2,6 +2,10 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     watch: {
+      css: {
+        files: 'custom_css/*.css',
+        tasks: ['concat']
+      },
       react: {
         files: 'react_components/*.jsx',
         tasks: ['browserify']
@@ -32,7 +36,6 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-browserify');
-  grunt.loadNpmTasks('grunt-css');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('default', ['concat', 'browserify']);
