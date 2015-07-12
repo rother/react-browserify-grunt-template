@@ -1,8 +1,10 @@
 # react-browserify-grunt-template
 
 A template for building [React](http://facebook.github.io/react/) applications.
-It uses [browserify](https://github.com/substack/node-browserify), [grunt](https://github.com/gruntjs/grunt) and
-[react-bootstrap](https://react-bootstrap.github.io/).
+It uses [browserify](https://github.com/substack/node-browserify),
+[grunt](https://github.com/gruntjs/grunt) and
+[react-bootstrap](https://react-bootstrap.github.io/). The template uses ES6 via
+[babelify](https://github.com/babel/babelify).
 
 To get started (on Unix like systems):
 * make sure [npm](https://www.npmjs.com/) is installed and grunt-cli is installed globally
