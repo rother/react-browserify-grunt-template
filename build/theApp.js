@@ -28661,10 +28661,17 @@ module.exports = require('./lib/React');
 },{"./lib/React":109}],237:[function(require,module,exports){
 'use strict';
 
-var React = require('react');
-var AppContainer = require('./appcontainer.jsx');
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-React.render(React.createElement(AppContainer, null), document.getElementById('content'));
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _appcontainerJsx = require('./appcontainer.jsx');
+
+var _appcontainerJsx2 = _interopRequireDefault(_appcontainerJsx);
+
+_react2['default'].render(_react2['default'].createElement(_appcontainerJsx2['default'], null), document.getElementById('content'));
 
 },{"./appcontainer.jsx":238,"react":236}],238:[function(require,module,exports){
 'use strict';
