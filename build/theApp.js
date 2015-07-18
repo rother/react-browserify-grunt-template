@@ -28693,22 +28693,39 @@ module.exports = React.createClass({
 },{"./helloworld.jsx":239,"react":236,"react-bootstrap":67}],239:[function(require,module,exports){
 "use strict";
 
-var React = require("react");
+exports.__esModule = true;
 
-module.exports = React.createClass({
-  displayName: "exports",
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-  render: function render() {
-    return React.createElement(
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var HelloWorld = (function () {
+  function HelloWorld() {
+    _classCallCheck(this, HelloWorld);
+  }
+
+  HelloWorld.prototype.render = function render() {
+    return _react2["default"].createElement(
       "div",
       { className: "helloWorld" },
-      React.createElement(
+      _react2["default"].createElement(
         "h1",
         null,
         this.props.text
       )
     );
-  }
-});
+  };
+
+  return HelloWorld;
+})();
+
+exports["default"] = HelloWorld = _react2["default"].createClass(HelloWorld.prototype);
+
+//module.exports = React.createClass(HelloWorld.prototype);
+module.exports = exports["default"];
 
 },{"react":236}]},{},[237,238,239]);
