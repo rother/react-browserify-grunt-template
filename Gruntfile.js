@@ -26,7 +26,9 @@ module.exports = function(grunt) {
     },
     browserify: {
       options: {
-        transform: [ require('grunt-react').browserify ]
+        transform: [
+          ["babelify", {loose: "all"}]
+        ]
       },
       app: {
         src: ['react_components/**/*.jsx'],

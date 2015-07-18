@@ -26356,38 +26356,53 @@ module.exports = warning;
 module.exports = require('./lib/React');
 
 },{"./lib/React":92}],221:[function(require,module,exports){
-/** @jsx React.DOM */
+'use strict';
+
 var React = require('react');
 var AppContainer = require('./appcontainer.jsx');
 
-React.render(React.createElement(AppContainer, null), document.getElementById("content"));
+React.render(React.createElement(AppContainer, null), document.getElementById('content'));
 
 },{"./appcontainer.jsx":222,"react":220}],222:[function(require,module,exports){
-/** @jsx React.DOM */
+'use strict';
+
 var React = require('react');
 var ReactBootstrap = require('react-bootstrap');
 var HelloWorld = require('./helloworld.jsx');
 
-module.exports = React.createClass({displayName: "exports",
-  render: function(){
-    return(
-      React.createElement("div", {className: "appContainer"}, 
-        React.createElement(HelloWorld, {text: "Hello, World!"}), 
-        React.createElement(ReactBootstrap.Button, {bsStyle: "primary", bsSize: "large"}, "Test Button")
+module.exports = React.createClass({
+  displayName: 'exports',
+
+  render: function render() {
+    return React.createElement(
+      'div',
+      { className: 'appContainer' },
+      React.createElement(HelloWorld, { text: 'Hello, World!' }),
+      React.createElement(
+        ReactBootstrap.Button,
+        { bsStyle: 'primary', bsSize: 'large' },
+        'Test Button'
       )
-    )
+    );
   }
 });
 
 },{"./helloworld.jsx":223,"react":220,"react-bootstrap":54}],223:[function(require,module,exports){
-/** @jsx React.DOM */
-var React = require('react');
+"use strict";
 
-module.exports = React.createClass({displayName: "exports",
-  render: function(){
-    return(
-      React.createElement("div", {className: "helloWorld"}, 
-        React.createElement("h1", null, this.props.text)
+var React = require("react");
+
+module.exports = React.createClass({
+  displayName: "exports",
+
+  render: function render() {
+    return React.createElement(
+      "div",
+      { className: "helloWorld" },
+      React.createElement(
+        "h1",
+        null,
+        this.props.text
       )
     );
   }
