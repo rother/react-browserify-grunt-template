@@ -1,4 +1,4 @@
-# react-browserify-grunt-template
+# react-browserify-grunt-template (ES6)
 
 A template for building [React](http://facebook.github.io/react/) applications.
 It uses [browserify](https://github.com/substack/node-browserify),
