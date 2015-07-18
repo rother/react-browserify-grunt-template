@@ -1,6 +1,6 @@
 import React from 'react';
 
-class HelloWorld {
+class HelloWorld extends React.Component {
   render() {
     return(
       <div className="helloWorld">
@@ -10,4 +10,4 @@ class HelloWorld {
   }
 }
 
-export default HelloWorld = React.createClass(HelloWorld.prototype);
+export default HelloWorld;

@@ -6,7 +6,7 @@ module.exports = React.createClass({
   render: function(){
     return(
       <div className="appContainer">
-        <HelloWorld text="Hello, World!" />
+        <HelloWorld text="Hello, World ES6!" />
         <ReactBootstrap.Button bsStyle='primary' bsSize='large'>Test Button</ReactBootstrap.Button>
       </div>
     )

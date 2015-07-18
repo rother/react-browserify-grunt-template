@@ -28680,7 +28680,7 @@ module.exports = React.createClass({
     return React.createElement(
       'div',
       { className: 'appContainer' },
-      React.createElement(HelloWorld, { text: 'Hello, World!' }),
+      React.createElement(HelloWorld, { text: 'Hello, World ES6!' }),
       React.createElement(
         ReactBootstrap.Button,
         { bsStyle: 'primary', bsSize: 'large' },
@@ -28699,13 +28699,19 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
+
 var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
-var HelloWorld = (function () {
+var HelloWorld = (function (_React$Component) {
+  _inherits(HelloWorld, _React$Component);
+
   function HelloWorld() {
     _classCallCheck(this, HelloWorld);
+
+    _React$Component.apply(this, arguments);
   }
 
   HelloWorld.prototype.render = function render() {
@@ -28721,11 +28727,9 @@ var HelloWorld = (function () {
   };
 
   return HelloWorld;
-})();
+})(_react2["default"].Component);
 
-exports["default"] = HelloWorld = _react2["default"].createClass(HelloWorld.prototype);
-
-//module.exports = React.createClass(HelloWorld.prototype);
+exports["default"] = HelloWorld;
 module.exports = exports["default"];
 
 },{"react":236}]},{},[237,238,239]);
