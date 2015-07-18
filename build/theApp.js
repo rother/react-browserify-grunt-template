@@ -28659,14 +28659,12 @@ module.exports = warning;
 module.exports = require('./lib/React');
 
 },{"./lib/React":109}],237:[function(require,module,exports){
-/** @jsx React.DOM */
 var React = require('react');
 var AppContainer = require('./appcontainer.jsx');
 
 React.render(React.createElement(AppContainer, null), document.getElementById("content"));
 
 },{"./appcontainer.jsx":238,"react":236}],238:[function(require,module,exports){
-/** @jsx React.DOM */
 var React = require('react');
 var ReactBootstrap = require('react-bootstrap');
 var HelloWorld = require('./helloworld.jsx');
@@ -28675,7 +28673,7 @@ module.exports = React.createClass({displayName: "exports",
   render: function(){
     return(
       React.createElement("div", {className: "appContainer"}, 
-        React.createElement(HelloWorld, {text: "Hello, World!"}), 
+        React.createElement(HelloWorld, {text: "Hello, World from master!"}), 
         React.createElement(ReactBootstrap.Button, {bsStyle: "primary", bsSize: "large"}, "Test Button")
       )
     )
@@ -28683,7 +28681,6 @@ module.exports = React.createClass({displayName: "exports",
 });
 
 },{"./helloworld.jsx":239,"react":236,"react-bootstrap":67}],239:[function(require,module,exports){
-/** @jsx React.DOM */
 var React = require('react');
 
 module.exports = React.createClass({displayName: "exports",
