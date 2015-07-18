@@ -28669,26 +28669,53 @@ React.render(React.createElement(AppContainer, null), document.getElementById('c
 },{"./appcontainer.jsx":238,"react":236}],238:[function(require,module,exports){
 'use strict';
 
-var React = require('react');
-var ReactBootstrap = require('react-bootstrap');
-var HelloWorld = require('./helloworld.jsx');
+exports.__esModule = true;
 
-module.exports = React.createClass({
-  displayName: 'exports',
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-  render: function render() {
-    return React.createElement(
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactBootstrap = require('react-bootstrap');
+
+var _reactBootstrap2 = _interopRequireDefault(_reactBootstrap);
+
+var _helloworldJsx = require('./helloworld.jsx');
+
+var _helloworldJsx2 = _interopRequireDefault(_helloworldJsx);
+
+var AppContainer = (function (_React$Component) {
+  _inherits(AppContainer, _React$Component);
+
+  function AppContainer() {
+    _classCallCheck(this, AppContainer);
+
+    _React$Component.apply(this, arguments);
+  }
+
+  AppContainer.prototype.render = function render() {
+    return _react2['default'].createElement(
       'div',
       { className: 'appContainer' },
-      React.createElement(HelloWorld, { text: 'Hello, World ES6!' }),
-      React.createElement(
-        ReactBootstrap.Button,
+      _react2['default'].createElement(_helloworldJsx2['default'], { text: 'Hello, World ES6!' }),
+      _react2['default'].createElement(
+        _reactBootstrap2['default'].Button,
         { bsStyle: 'primary', bsSize: 'large' },
         'Test Button'
       )
     );
-  }
-});
+  };
+
+  return AppContainer;
+})(_react2['default'].Component);
+
+exports['default'] = AppContainer;
+module.exports = exports['default'];
 
 },{"./helloworld.jsx":239,"react":236,"react-bootstrap":67}],239:[function(require,module,exports){
 "use strict";
