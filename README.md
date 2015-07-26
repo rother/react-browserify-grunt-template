@@ -13,10 +13,11 @@ To get started (on Unix like systems):
 * make sure [npm](https://www.npmjs.com/) is installed and grunt-cli is
 installed globally
 ("npm install -g grunt-cli")
-* install all the requirements (run "sudo npm install" in the root directory)
-* run "grunt" in the root directory, you can use "grunt watch" to automatically
-check for changes
-* start a server (e.g., "python -m SimpleHTTPServer" from the root directory)
+* install all the requirements (run "npm install" in the application directory)
+* run "grunt" in the application directory, you can use "grunt watch" to
+automatically check for changes
+* start a server (e.g., "python -m SimpleHTTPServer" from the application
+directory)
 
 Make sure to change the following files as needed:
 * index.html - title tag, id of the hook node, name of the loaded
@@ -28,3 +29,7 @@ script
 * .git/config - change the origin as needed
 
 The entry file is app.jsx
+
+Note: This is only one possible combination of tools. For a good overview
+of the available JavaScrip tools, check out the
+[Hitchhiker's Guide to Modern JavaScript tooling](http://reactkungfu.com/2015/07/the-hitchhikers-guide-to-modern-javascript-tooling/).
