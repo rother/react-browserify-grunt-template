@@ -25,3 +25,7 @@ script
 * .git/config - change the origin as needed
 
 The entry file is app.jsx
+
+Note: This is only one possible combination of tools. For a good overview
+of the available JavaScrip tools, check out the
+[Hitchhiker's Guide to Modern JavaScript tooling](http://reactkungfu.com/2015/07/the-hitchhikers-guide-to-modern-javascript-tooling/).
