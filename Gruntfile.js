@@ -27,7 +27,7 @@ module.exports = function(grunt) {
     browserify: {
       options: {
         transform: [
-          ["babelify", {loose: "all"}]
+          ["babelify", {presets: ["es2015", "react"]}]
         ]
       },
       app: {

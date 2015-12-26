@@ -1,7 +1,7 @@
 {
   "name": "react-browserify-grunt-template",
-  "version": "0.0.2",
-  "description": "A template to start new React projects (using ES6)",
+  "version": "0.0.3",
+  "description": "A template to start new React projects",
   "author": "Kristian Rother",
   "license": "BSD-2-Clause",
   "repository": {
@@ -12,16 +12,17 @@
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-browserify": "^3.8.0",
-    "grunt-react": "^0.12.2",
-    "grunt-contrib-concat": "^0.5.1",
-    "babelify": "^6.1.3"
+    "grunt-browserify": "^4.0.1",
+    "grunt-contrib-concat": "~0.5.1",
+    "babelify": "^7.2.0",
+    "babel-preset-es2015": "~6.3.13",
+    "babel-preset-react": "~6.3.13"
   },
   "dependencies": {
-    "bootstrap": "^3.3.5",
-    "react": "^0.13.3",
-    "react-bootstrap": "^0.23.7",
-    "browserify": "^10.2.6",
+    "bootstrap": "^3.3.6",
+    "react": "^0.14.3",
+    "react-bootstrap": "^0.28.1",
+    "browserify": "^12.0.1",
     "jquery": "^2.1.4",
     "underscore": "^1.8.3"
   }
